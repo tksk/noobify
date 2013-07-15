@@ -3,7 +3,7 @@
 <%@ val content: xml.Node %>
 <html>
 <head><title><%= app %>/<%= path %> :: noobify</title>
-<link href="/static/css/markdown.css" rel="stylesheet"></link>
+<link href="<%= request.getContextPath %>/static/css/markdown.css" rel="stylesheet"></link>
 </head>
 <body>
 <%= content %>
