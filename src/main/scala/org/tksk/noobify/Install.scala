@@ -21,12 +21,12 @@ import scala.io.Source
 class Install extends ScalatraServlet with ScalateSupport with BaseServlet with ContentResolver {
 
   get("/apps/:app/content-:app.zip") {
-	val app = params("app")
-	redirect(s"/apps/${app}/content-:app-${defaultAppVersion}.zip")
+    val app = params("app")
+    redirect(s"/apps/${app}/content-:app-${defaultAppVersion}.zip")
   }
 
   get("/apps/:app/content-:version.zip") {
-	val app = params("app")
+    val app = params("app")
     val version = params("version")
 
     getAppFileContent(app, "meta/cache") match {
@@ -37,6 +37,6 @@ class Install extends ScalatraServlet with ScalateSupport with BaseServlet with 
           case Left(r) => r
           case Right(zip) => zip
         }
-	}
+    }
   }
 }

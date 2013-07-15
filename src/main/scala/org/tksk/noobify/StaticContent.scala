@@ -17,30 +17,30 @@ trait StaticContent extends ScalatraServlet with ScalateSupport with BaseServlet
   val mustacheExtension = ".mustache"
 
   get("/apps/:app/") {
-	val app = params("app")
-	val index = "index.md"
+    val app = params("app")
+    val index = "index.md"
     getAppFileContent(app, index) match {
       case Left(r) => pass
       case Right(file) if !file.exists => pass
       case Right(file) => redirect(s"/apps/${app}/${index}")
-	}
+    }
   }
 
   get("/apps/:app/:name.md") {
-	val app = params("app")
-	val name = params("name")
+    val app = params("app")
+    val name = params("name")
     import com.tristanhunt.knockoff.DefaultDiscounter._
     import com.tristanhunt.knockoff._
 
     getAppFileContent(app, name+".md") match {
-	  case Left(r) => r
-	  case Right(file) =>
-	    contentType="text/html"
+      case Left(r) => r
+      case Right(file) =>
+        contentType="text/html"
 
-	    val source = Source.fromFile(file).getLines.mkString("\n")
+        val source = Source.fromFile(file).getLines.mkString("\n")
         ssp("/meta/ssp/markdown.ssp", "app" -> app, "path" -> name, 
             "content" -> toXHTML(knockoff(source)))
-	}
+    }
   }
 
   def mustacheOption = {
@@ -77,7 +77,7 @@ trait StaticContent extends ScalatraServlet with ScalateSupport with BaseServlet
     getAppFileContent(app, path) match {
       case Left(_) => pass
       case Right(file) =>
-	    contentType="text/html"
+        contentType="text/html"
 
         val content = Source.fromFile(file).getLines.mkString("\n")
         ssp("/meta/ssp/prettify.ssp", "app" -> app, "path" -> path, "content" -> content, "params"->Nil)
@@ -108,7 +108,7 @@ trait StaticContent extends ScalatraServlet with ScalateSupport with BaseServlet
         multiParams("captures") match {
           case app :: segments :: Nil /* if canPrettify(app, segments) */=>
 
-	        contentType="text/html"
+            contentType="text/html"
             val src = mustache(path, "parameterized" -> params)
             ssp("/meta/ssp/prettify.ssp", "app" -> app, "path" -> segments,
                 "content" -> src, "params" -> getParams)
