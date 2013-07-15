@@ -19,19 +19,19 @@ index.md ファイルはいわゆる *index.html* と同様に振る舞います。
 >
 > ## This is an H2 in a blockquote
 
-## Mustach
+## Mustache
 
-なぜ Mustach か。テンプレートの埋め込み用文字が他のスクリプトと干渉しにくく、シンプルだからです。
-noobify で使用するさい約束事として、テンプレートとなるファイル全体を {{parameterized}} で囲んでください:
+なぜ [ Mustache ](http://mustache.github.io/) か。テンプレートの埋め込み用文字`{{varname}}`が
+他のスクリプトと干渉しにくく、シンプルだからです。
+noobify で使用するさい約束事として、テンプレートとなるファイル全体を `{{#parameterized}}` と
+`{{/parameterized}}` で囲んでください:
 
-> {{#parameterized}}
->
-> #!/bin/sh
-> 
-> JAVA_HOME={{JAVA_HOME}}
-> JAVA_CMD=$JAVA_HOME/bin/java
-> 
-> {{/parameterized}}
-
-[ Mustach ](http://mustache.github.io/)
+    {{#parameterized}}
+    
+    #!/bin/sh
+    
+    JAVA_HOME={{JAVA_HOME}}
+    JAVA_CMD=$JAVA_HOME/bin/java
+    
+    {{/parameterized}}
 
