@@ -1,0 +1,11 @@
+<%@ val app: String %>
+<%@ val path: String %>
+<%@ val content: xml.Node %>
+<html>
+<head><title><%= app %>/<%= path %> :: noobify</title>
+<link href="/static/css/markdown.css" rel="stylesheet"></link>
+</head>
+<body>
+<%= content %>
+</body>
+</html>

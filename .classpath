@@ -1,0 +1,31 @@
+<classpath>
+  <classpathentry output="target\scala-2.10\classes" path="src\main\scala" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\classes" path="src\main\java" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\test-classes" path="src\test\scala" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\test-classes" path="src\test\java" kind="src"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.5.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.slf4j\slf4j-api\srcs\slf4j-api-1.7.5-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra_2.10\jars\scalatra_2.10-2.2.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra_2.10\srcs\scalatra_2.10-2.2.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra-common_2.10\jars\scalatra-common_2.10-2.2.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra-common_2.10\srcs\scalatra-common_2.10-2.2.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.clapper\grizzled-slf4j_2.10\jars\grizzled-slf4j_2.10-1.0.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.clapper\grizzled-slf4j_2.10\srcs\grizzled-slf4j_2.10-1.0.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scalatra.rl\rl_2.10\jars\rl_2.10-0.4.4.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scalatra.rl\rl_2.10\srcs\rl_2.10-0.4.4-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\com.googlecode.juniversalchardet\juniversalchardet\jars\juniversalchardet-1.0.3.jar" sourcepath="C:\Users\tksk\.ivy2\cache\com.googlecode.juniversalchardet\juniversalchardet\srcs\juniversalchardet-1.0.3-sources.jar"></classpathentry>
+  <classpathentry path="C:\Users\tksk\.ivy2\cache\eu.medsea.mimeutil\mime-util\bundles\mime-util-2.1.3.jar" kind="lib"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.2.jar" sourcepath="C:\Users\tksk\.ivy2\cache\joda-time\joda-time\srcs\joda-time-2.2-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.2.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.joda\joda-convert\srcs\joda-convert-1.2-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\bundles\akka-actor_2.10-2.1.2.jar" sourcepath="C:\Users\tksk\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\srcs\akka-actor_2.10-2.1.2-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\com.typesafe\config\bundles\config-1.0.0.jar" sourcepath="C:\Users\tksk\.ivy2\cache\com.typesafe\config\srcs\config-1.0.0-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra-scalate_2.10\jars\scalatra-scalate_2.10-2.2.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scalatra\scalatra-scalate_2.10\srcs\scalatra-scalate_2.10-2.2.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.fusesource.scalate\scalate-core_2.10\bundles\scalate-core_2.10-1.6.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.fusesource.scalate\scalate-core_2.10\srcs\scalate-core_2.10-1.6.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.fusesource.scalate\scalate-util_2.10\bundles\scalate-util_2.10-1.6.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.fusesource.scalate\scalate-util_2.10\srcs\scalate-util_2.10-1.6.1-sources.jar"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.2.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.10.2-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\com.tristanhunt\knockoff_2.10\jars\knockoff_2.10-0.8.1.jar" sourcepath="C:\Users\tksk\.ivy2\cache\com.tristanhunt\knockoff_2.10\srcs\knockoff_2.10-0.8.1-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.scalaj\scalaj-time_2.10.2\jars\scalaj-time_2.10.2-0.7.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.scalaj\scalaj-time_2.10.2\srcs\scalaj-time_2.10.2-0.7-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\org.apache.tika\tika-core\bundles\tika-core-1.4.jar" sourcepath="C:\Users\tksk\.ivy2\cache\org.apache.tika\tika-core\srcs\tika-core-1.4-sources.jar"></classpathentry>
+  <classpathentry path="C:\Users\tksk\.ivy2\cache\javax.servlet\javax.servlet-api\jars\javax.servlet-api-3.0.1.jar" kind="lib"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.0.13.jar" sourcepath="C:\Users\tksk\.ivy2\cache\ch.qos.logback\logback-classic\srcs\logback-classic-1.0.13-sources.jar"></classpathentry>
+  <classpathentry kind="lib" path="C:\Users\tksk\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.0.13.jar" sourcepath="C:\Users\tksk\.ivy2\cache\ch.qos.logback\logback-core\srcs\logback-core-1.0.13-sources.jar"></classpathentry>
+  <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"></classpathentry>
+  <classpathentry path="bin" kind="output"></classpathentry>
+</classpath>

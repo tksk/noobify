@@ -1,0 +1,25 @@
+<%@ val app: String %>
+<%@ val path: String %>
+<%@ val content: String %>
+<%@ val params: Seq[(String, String)] %>
+<html>
+<head><title><%= app %>/<%= path %> :: noobify</title>
+<link href="/static/css/markdown.css" rel="stylesheet"></link>
+<script src="/static/google-code-prettify/run_prettify.js"></script>
+</head>
+<body>
+<h1>File: /apps/<%= app %>/<%= path %></h1>
+#if(0 < params.length)
+<form>
+#for (param <- params)
+  <li>${param._1}: <input size="120" type="text" name="${param._1}" value="${param._2}"> </li>
+#end
+<input type="submit" value="generate" />
+</form>
+#end
+<pre class="prettyprint">
+<%= content %>
+</pre>
+<div><a href="?raw">raw</a></div>
+</body>
+</html>

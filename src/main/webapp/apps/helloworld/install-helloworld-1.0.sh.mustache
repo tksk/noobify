@@ -1,0 +1,18 @@
+{{#parameterized}}
+#!/bin/sh
+
+echo "hello: {{yourname}}"
+
+if [ "$JAVA_HOME" = "" ] ; then
+  JAVA_HOME={{JAVA_HOME}}
+fi
+
+JAVA_CMD=java
+
+if [ -d $JAVA_HOME ]; then
+  JAVA_CMD=$JAVA_HOME/bin/java
+fi
+
+$JAVA_CMD -version
+
+{{/parameterized}}
